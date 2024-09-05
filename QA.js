@@ -42,18 +42,18 @@
 
 // Here is the series of ternary statements that sets the variable category according to the specified conditions:
 // Javascript:
-// let eatsPlants = true;  // Example value
-// let eatsAnimals = false; // Example value
+let eatsPlants = false;  // Example value
+let eatsAnimals = false; // Example value
 
-// let category = eatsPlants && eatsAnimals
-//   ? "omnivore"
-//   : eatsPlants
-//   ? "herbivore"
-//   : eatsAnimals
-//   ? "carnivore"
-//   : "undefined";
+let category = eatsPlants && eatsAnimals
+  ? "omnivore"
+  : eatsPlants
+  ? "herbivore"
+  : eatsAnimals
+  ? "carnivore"
+  : "undefined";
 
-// console.log(category);
+ console.log(category);
 
 // This code works as follows:
 
@@ -62,3 +62,11 @@
 // If only eatsAnimals is true, it sets category to "carnivore".
 // If neither eatsPlants nor eatsAnimals is true, it sets category to "undefined".
 // Each condition is checked sequentially using nested ternary operators.
+
+
+// #3. How many times will the while loop run?
+// let x = 10;
+// while (x <= 25) {
+//   console.log('Printing out x = ' + x);
+//   x = x + 2;
+// }
