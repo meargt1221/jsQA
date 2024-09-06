@@ -42,18 +42,18 @@
 
 // Here is the series of ternary statements that sets the variable category according to the specified conditions:
 // Javascript:
-let eatsPlants = false;  // Example value
-let eatsAnimals = false; // Example value
+// let eatsPlants = false;  // Example value
+// let eatsAnimals = false; // Example value
 
-let category = eatsPlants && eatsAnimals
-  ? "omnivore"
-  : eatsPlants
-  ? "herbivore"
-  : eatsAnimals
-  ? "carnivore"
-  : "undefined";
+// let category = eatsPlants && eatsAnimals
+//   ? "omnivore"
+//   : eatsPlants
+//   ? "herbivore"
+//   : eatsAnimals
+//   ? "carnivore"
+//   : "undefined";
 
- console.log(category);
+//  console.log(category);
 
 // This code works as follows:
 
@@ -70,3 +70,25 @@ let category = eatsPlants && eatsAnimals
 //   console.log('Printing out x = ' + x);
 //   x = x + 2;
 // }
+
+
+
+// #4.Directions:
+// For this quiz, you're going to create a function called buildTriangle() that will accept an input (the triangle at its widest width) and will return the string representation of a triangle.
+
+// Solution #4
+
+function buildTriangle(width) {
+  let triangle = '';
+
+  // Build the triangle one row at a time
+  for (let i = 1; i <= width; i++) {
+    // Add 'i' asterisks followed by a newline character
+    triangle += 'A'.repeat(i) + '\n';
+  }
+
+  return triangle;
+}
+
+// Example usage:
+console.log(buildTriangle(25));
