@@ -106,18 +106,35 @@
 // ###inline function expression
 
 
-const laugh = function(num) {
-  // Initialize sound as an empty string
-  let sound = ""; 
+// const laugh = function(num) {
+//   // Initialize sound as an empty string
+//   let sound = ""; 
   
   // Iterate 'num' times
-  for (let x = 0; x < num; x++) {
-    sound = sound + "ha"; // Append "ha" to sound
-  }
+//   for (let x = 0; x < num; x++) {
+//     sound = sound + "ha"; // Append "ha" to sound
+//   }
   
-  sound = sound + "!"; // Add "!" at the end
-  return sound; // Return the constructed sound
-};
+//   sound = sound + "!"; // Add "!" at the end
+//   return sound; // Return the constructed sound
+// };
 
-// Example usage:
-console.log(laugh(15)); // Outputs: "hahaha!"
+// // Example usage:
+// console.log(laugh(15)); // Outputs: "hahaha!"
+
+
+// #5. Directions:
+// Write a named function expression that stores the function in a variable called cry and returns "boohoo!". Don't forget to call the function using the variable name, not the function name:
+
+
+// Solution #5
+const cry = function(amnt){
+  let sound= "";
+ for (let x=0; x < amnt; x++) {
+      sound = sound + "boohoo";
+ }
+ sound = sound + "!";
+ return sound;
+
+}
+console.log(cry(2));
