@@ -96,8 +96,21 @@
 // example1 callback function expression
 
 
-const doSomething = function addone(y) {
-  return y + 1;
-};
+// const doSomething = function addone(y) {
+//   return y + 1;
+// };
 
-console.log(doSomething(9));
+// console.log(doSomething(9));
+
+
+// ###inline function expression
+
+
+const laugh = function(num) {
+    for  (let x =  0; x < num; x++ )  {
+      sound = sound +  "ha";
+    }
+    sound = sound +"!";
+    return sound;
+  };
+  console.log(function(5));
