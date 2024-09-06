@@ -107,10 +107,17 @@
 
 
 const laugh = function(num) {
-    for  (let x =  0; x < num; x++ )  {
-      sound = sound +  "ha";
-    }
-    sound = sound +"!";
-    return sound;
-  };
-  console.log(function(5));
+  // Initialize sound as an empty string
+  let sound = ""; 
+  
+  // Iterate 'num' times
+  for (let x = 0; x < num; x++) {
+    sound = sound + "ha"; // Append "ha" to sound
+  }
+  
+  sound = sound + "!"; // Add "!" at the end
+  return sound; // Return the constructed sound
+};
+
+// Example usage:
+console.log(laugh(15)); // Outputs: "hahaha!"
