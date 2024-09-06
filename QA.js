@@ -78,17 +78,26 @@
 
 // Solution #4
 
-function buildTriangle(width) {
-  let triangle = '';
+// function buildTriangle(width) {
+//   let triangle = '';
 
-  // Build the triangle one row at a time
-  for (let i = 1; i <= width; i++) {
-    // Add 'i' asterisks followed by a newline character
-    triangle += 'A'.repeat(i) + '\n';
-  }
+//   // Build the triangle one row at a time
+//   for (let i = 25; i <= width; i--) {
+//     // Add 'i' asterisks followed by a newline character
+//     triangle += 'A'.repeat(i) - '\n';
+//   }
 
-  return triangle;
-}
+//   return triangle;
+// }
 
-// Example usage:
-console.log(buildTriangle(25));
+// // Example usage:
+// console.log(buildTriangle(1));
+
+// example1 callback function expression
+
+
+const doSomething = function addone(y) {
+  return y + 1;
+};
+
+console.log(doSomething(9));
