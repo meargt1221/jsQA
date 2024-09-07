@@ -127,14 +127,51 @@
 // Write a named function expression that stores the function in a variable called cry and returns "boohoo!". Don't forget to call the function using the variable name, not the function name:
 
 
-// Solution #5
-const cry = function(amnt){
-  let sound= "";
- for (let x=0; x < amnt; x++) {
-      sound = sound + "boohoo";
- }
- sound = sound + "!";
- return sound;
+// // Solution #5
+// const cry = function(amnt){
+//   let sound= "";
+//  for (let x=0; x < amnt; x++) {
+//       sound = sound + "boohoo";
+//  }
+//  sound = sound + "!";
+//  return sound;
 
+// }
+// console.log(cry(2));
+
+
+
+
+
+
+// Let us take an iteration variable, that represent the remaining Time in seconds
+let n = 60
+
+// While loop with a stop condition
+while (n >= 0) {
+    if (n === 50) {
+        console.log("Orbiter transfers from ground to internal power");
+    }
+    else if (n === 31) {
+        console.log("Ground launch sequencer is go for auto sequence start");
+    }
+    else if (n === 16) {
+        console.log("Activate launch pad sound suppression system");
+    }
+    else if (n === 10) {
+        console.log("Activate main engine hydrogen burnoff system");
+    }
+    else if (n === 6) {
+        console.log("Main engine start");
+    }
+    else if (n === 0) {
+        console.log("Solid rocket booster ignition and liftoff!");
+    }
+    else{
+        console.log("T-"+n+" seconds");
+    }
+    
+    //Never forget to decrement/increment the iteration variable in a while loop
+    // Otherwise, you loop will run infinite iterations
+    n = n-1;
 }
-console.log(cry(2));
