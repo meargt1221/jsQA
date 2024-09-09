@@ -213,25 +213,25 @@
 // // console.log(x(3));
 
 
-// function laugh(num){
-//     let txt= ""
-//     for (i = 1; i<=num; i++) {
-//       txt += "ha"
-//       return txt;
-//     }
-// }
-// console.log(laugh()+"!");
-
-
-
-function laugh(num) {
-  let text = ""
-  for (let i =1; i <= num; i++){
-      text += "ha"
-  }
-  if (num>0) {
-      text += "!"
-  }
-  return text;
+function laugh(num){
+    let txt= ""
+    for (i = 1; i<=num; i++) {
+      txt += "ha"
+      return txt;
+    }
 }
-console.log (laugh(3));
+console.log(laugh(1)+"!");
+
+#Laughing
+
+// function laugh(num) {
+//   let text = ""
+//   for (let i =1; i <= num; i++){
+//       text += "ha"
+//   }
+//   if (num>0) {
+//       text += "!"
+//   }
+//   return text;
+// }
+// console.log (laugh(3));
