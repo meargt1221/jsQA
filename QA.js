@@ -212,6 +212,7 @@
 // // }
 // // console.log(x(3));
 
+Method #one
 
 function laugh(num){
     let txt= ""
