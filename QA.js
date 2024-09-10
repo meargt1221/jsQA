@@ -240,9 +240,17 @@
 
 // #Array
 
-const donuts = ["glazed", "chocolate frosted", "boston cream", "powdered", "sprinkled", "maple", "coconut", "jelly"];
+// const donuts = ["glazed", "chocolate frosted", "boston cream", "powdered", "sprinkled", "maple", "coconut", "jelly"];
 
-donuts[2] = "cinnamon twist";
-donuts[4] = "salted caramel";
-donuts[5] = "shortcake eclair";
-console.log(donuts[2,4,5]);
+// donuts[2] = "cinnamon twist";
+// donuts[4] = "salted caramel";
+// donuts[5] = "shortcake eclair";
+// console.log(donuts[2,4,5]);
+
+
+
+// exercise
+
+var udacityFamily = ['James', 'Julia', 'Mearg']
+for (let index = 0; index < udacityFamily.length; index++){
+console.log(udacityFamily[index]);}
