@@ -212,18 +212,18 @@
 // // }
 // // console.log(x(3));
 
-Method #one
+// Method #one
 
-function laugh(num){
-    let txt= ""
-    for (i = 1; i<=num; i++) {
-      txt += "ha"
-      return txt;
-    }
-}
-console.log(laugh(1)+"!");
+// function laugh(num){
+//     let txt= ""
+//     for (i = 1; i<=num; i++) {
+//       txt += "ha"
+//       return txt;
+//     }
+// }
+// console.log(laugh(1)+"!");
 
-#Laughing
+// #Laughing
 
 // function laugh(num) {
 //   let text = ""
@@ -236,3 +236,13 @@ console.log(laugh(1)+"!");
 //   return text;
 // }
 // console.log (laugh(3));
+
+
+// #Array
+
+const donuts = ["glazed", "chocolate frosted", "boston cream", "powdered", "sprinkled", "maple", "coconut", "jelly"];
+
+donuts[2] = "cinnamon twist";
+donuts[4] = "salted caramel";
+donuts[5] = "shortcake eclair";
+console.log(donuts[2,4,5]);
