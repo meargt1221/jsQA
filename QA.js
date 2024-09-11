@@ -251,7 +251,12 @@
 
 // exercise
 
-var udacityFamily = ['James', 'Julia', 'Mearg']
-    for (let index = 0; index < udacityFamily.length; index++){
-    console.log(udacityFamily);
-}
+// var udacityFamily = ['James', 'Julia', 'Mearg']
+//     for (let index = 0; index < udacityFamily.length; index++){
+//     console.log(udacityFamily);
+// }
+
+// CREW
+
+const crew = ['Mal', 'Zoe','Wash','Inara','Jayne','Kaylee'];
+    console.log(crew); 
