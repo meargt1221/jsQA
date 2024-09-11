@@ -252,5 +252,6 @@
 // exercise
 
 var udacityFamily = ['James', 'Julia', 'Mearg']
-for (let index = 0; index < udacityFamily.length; index++){
-console.log(udacityFamily[index]);}
+    for (let index = 0; index < udacityFamily.length; index++){
+    console.log(udacityFamily);
+}
