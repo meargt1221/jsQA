@@ -258,5 +258,5 @@
 
 // CREW
 
-const crew = ['Mal', 'Zoe','Wash','Inara','Jayne','Kaylee'];
+const crew = new Array(Mal, 'Zoe','Wash','Inara','Jayne',Kaylee);
     console.log(crew); 
