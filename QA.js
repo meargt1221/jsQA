@@ -258,5 +258,18 @@
 
 // CREW
 
-const crew = new Array(Mal, 'Zoe','Wash','Inara','Jayne',Kaylee);
-    console.log(crew); 
+// const crew = new Array("captain", "Zoe", "Wash", "Inara", "Jayne", "Kaylee")
+//     console.log(crew); 
+
+// Price
+
+const prices = [1.23, 48.11, 90.11, 8.50, 9.99, 1.00, 1.10, 67.00];
+for ( let index = 0; index < prices.length; index+++){
+    if (index ===0)
+        prices[index]= price[index]*2;
+} else if (index === 2){
+    prices[index]= price[index]*2
+}else (index===6){
+    prices[index]=price[index]*2
+}
+console.log(prices);
