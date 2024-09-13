@@ -273,4 +273,4 @@ for (let index = 0; index < prices.length; index++) {
     prices[index] = prices[index] * 2;
 }
 }
-console.log(prices);
+console.log(JSON.stringify(prices));
