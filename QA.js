@@ -294,10 +294,29 @@
 // }
 // console.log(donuts);
 
-const donuts = ["jelly donut", "chocolate donut", "glazed donut"];
+// const donuts = ["jelly donut", "chocolate donut", "glazed donut"];
 
-donuts.forEach(function(donut) {
-  donut += " hole";
-  donut = donut.toUpperCase();
-  console.log(donut);
-});
+// donuts.forEach(function(donut) {
+//   donut += " hole";
+//   donut = donut.toUpperCase();
+//   console.log(donut);
+// });
+
+const umbrella = {
+  color: "pink",
+  isOpen: false,
+  open: function() {
+    if(umbrella.isOpen === true) {
+      return "The umbrella is already opened!";
+    } else {
+      umbrella.isOpen = true;
+      return "Julia opens the umbrella!";
+    }
+  }
+}
+// Using the Object
+// Then run this code, one line at a time:
+
+umbrella.isOpen; // returns false
+// umbrella.open(); // returns 'Julia opens the umbrella!'
+// umbrella.isOpen; // returns true
