@@ -302,21 +302,52 @@
 //   console.log(donut);
 // });
 
-const umbrella = {
+// Object practice #1
+// const umbrella = {
+//   color: "pink",
+//   isOpen: false,
+//   open: function() {
+//     if(umbrella.isOpen === true) {
+//       return "The umbrella is already opened!";
+//     } else {
+//       umbrella.isOpen = true;
+//       return "Julia opens the umbrella!";
+//     }
+//   }
+// }
+// // Using the Object
+// // Then run this code, one line at a time:
+
+// umbrella.isOpen; // returns false
+// umbrella.open(); // returns 'Julia opens the umbrella!'
+// umbrella.isOpen; // returns true
+
+
+// Object practice #2
+const umbrella = { 
   color: "pink",
   isOpen: false,
-  open: function() {
-    if(umbrella.isOpen === true) {
+  open: function() { 
+    if (umbrella.isOpen === true) {
       return "The umbrella is already opened!";
     } else {
       umbrella.isOpen = true;
       return "Julia opens the umbrella!";
     }
+   },
+  // your code goes here
+  close: function() {
+    if (umbrella.isOpen === true) {
+      umbrella.isOpen = false;
+      return "Julia closes the umbrella!";
+    } else {
+      return "The umbrella is already closed!";
+    }
   }
-}
-// Using the Object
-// Then run this code, one line at a time:
+  
+};
 
-umbrella.isOpen; // returns false
-// umbrella.open(); // returns 'Julia opens the umbrella!'
-// umbrella.isOpen; // returns true
+
+// test code
+console.log(umbrella.open());
+// console.log(umbrella.close());
