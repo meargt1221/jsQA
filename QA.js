@@ -324,30 +324,47 @@
 
 
 // Object practice #2
-const umbrella = { 
-  color: "pink",
-  isOpen: false,
-  open: function() { 
-    if (umbrella.isOpen === true) {
-      return "The umbrella is already opened!";
-    } else {
-      umbrella.isOpen = true;
-      return "Julia opens the umbrella!";
-    }
-   },
-  // your code goes here
-  close: function() {
-    if (umbrella.isOpen === true) {
-      umbrella.isOpen = false;
-      return "Julia closes the umbrella!";
-    } else {
-      return "The umbrella is already closed!";
-    }
-  }
+// const umbrella = { 
+//   color: "pink",
+//   isOpen: false,
+//   open: function() { 
+//     if (umbrella.isOpen === true) {
+//       return "The umbrella is already opened!";
+//     } else {
+//       umbrella.isOpen = true;
+//       return "Julia opens the umbrella!";
+//     }
+//    },
+//   // your code goes here
+//   close: function() {
+//     if (umbrella.isOpen === true) {
+//       umbrella.isOpen = false;
+//       return "Julia closes the umbrella!";
+//     } else {
+//       return "The umbrella is already closed!";
+//     }
+//   }
   
-};
+// };
 
 
 // test code
-console.log(umbrella.open());
+// console.log(umbrella.open());
 // console.log(umbrella.close());
+
+
+
+
+
+
+const sister = {
+  name: "Sarah", 
+  age: 23,
+  parents: [ "Alice", "Andy" ],
+  siblings: ["julia"],
+  favoriteColor: "purple",
+  pets: true
+};
+// two equivalent ways to use the key to return its value
+sister["parents"] // returns ["Alice", "Andy" ]
+sister.parents // also returns ["Alice", "Andy"]
