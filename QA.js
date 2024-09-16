@@ -422,42 +422,55 @@
 
 // Facebook Friends
 
-const facebookProfile = {
-  name: "Mearg",
-  friends:1000,
-  messages:['Frontend web development basics','React.js','node.js','angular'],
-  postMessage: function(message){
-    facebookProfile.messages.push(message);
-  },
-  deleteMessage: function(index){
-    facebookProfile.messages.splice(index, 1);
-  },
-  addFriend: function(){
-    facebookProfile.friends = facebookProfile.friends + 1;
-  },
-  removeFriend: function(){
-    if(facebookProfile.friecds>0)
-      facebookProfile.friends = facebookProfile.friends - 1;
-  }
-};
+// const facebookProfile = {
+//   name: "Mearg",
+//   friends:1000,
+//   messages:['Frontend web development basics','React.js','node.js','angular'],
+//   postMessage: function(message){
+//     facebookProfile.messages.push(message);
+//   },
+//   deleteMessage: function(index){
+//     facebookProfile.messages.splice(index, 1);
+//   },
+//   addFriend: function(){
+//     facebookProfile.friends = facebookProfile.friends + 1;
+//   },
+//   removeFriend: function(){
+//     if(facebookProfile.friecds>0)
+//       facebookProfile.friends = facebookProfile.friends - 1;
+//   }
+// };
 
 
-/* text code 
-console.log("Name: ", facebookProfile.name);
-console.log("Messages: ", facebookProfile.messages);
-facebookProfile.postMessage("New message!");
-console.log("Messages: ",  facebookProfile.messages);
-facebookProfile.deleteMessage(2);
-console.log("Messages: ",  facebookProfile.messages);
-console.log("Friends: ", facebookProfile.friends);
-facebookProfile.addFriend();
-console.log("Friends: ", facebookProfile.friends);
-facebookProfile.removeFriend();
-console.log("Friends: ", facebookProfile.friends); */
+// /* text code 
+// console.log("Name: ", facebookProfile.name);
+// console.log("Messages: ", facebookProfile.messages);
+// facebookProfile.postMessage("New message!");
+// console.log("Messages: ",  facebookProfile.messages);
+// facebookProfile.deleteMessage(2);
+// console.log("Messages: ",  facebookProfile.messages);
+// console.log("Friends: ", facebookProfile.friends);
+// facebookProfile.addFriend();
+// console.log("Friends: ", facebookProfile.friends);
+// facebookProfile.removeFriend();
+// console.log("Friends: ", facebookProfile.friends); */
 
-// console.log("Name:", facebookProfile.name);
-// console.log(facebookProfile);
-// console.log("Messages", facebookProfile.messages);
-// facebookProfile.postMessage("git and github");
-console.log("Messages: ",  facebookProfile.messages);
-facebookProfile.deleteMessage(0);
+// // console.log("Name:", facebookProfile.name);
+// // console.log(facebookProfile);
+// // console.log("Messages", facebookProfile.messages);
+// // facebookProfile.postMessage("git and github");
+// console.log("Messages: ",  facebookProfile.messages);
+// facebookProfile.deleteMessage(2);
+
+
+// Donut revision
+
+const donuts = [
+  { type: "Jelly", price: 1.22 },
+  { type: "Chocolate", price: 2.45 },
+  { type: "Cider", price: 1.59 },
+  { type: "Boston Cream", price: 5.99 }
+];
+donuts.forEach(function(donut){
+  console.log(donut.type+" price $"+donut.price+" each");
+});
