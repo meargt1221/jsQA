@@ -399,21 +399,65 @@
 
 // Bank accounnts 
 
-var savingsAccount = {
-   balance: 1000,
-   interestRatePercent: 1,
-   deposit: function addMoney(amount) {
-    if (amount >  0) {
-      savingsAccount.balance += amount;
-    }
-   },
-   withdraw: function removeMoney(amount) {
-    var verifyBalance = savingsAccount.balance - amount;
-    if (amount > 0 && verifyBalance >= 0) {
-      savingsAccount.balance -= amount;
-    }
-   },
-  printAccountSummary: function() {
-    return "Welcome!\nYour balance is currently $"+ savingsAccount.balance +" and your interest rate is " + savingsAccount.interestRatePercent + "%."}
+// var savingsAccount = {
+//    balance: 1000,
+//    interestRatePercent: 1,
+//    deposit: function addMoney(amount) {
+//     if (amount >  0) {
+//       savingsAccount.balance += amount;
+//     }
+//    },
+//    withdraw: function removeMoney(amount) {
+//     var verifyBalance = savingsAccount.balance - amount;
+//     if (amount > 0 && verifyBalance >= 0) {
+//       savingsAccount.balance -= amount;
+//     }
+//    },
+//   printAccountSummary: function() {
+//     return "Welcome!\nYour balance is currently $"+ savingsAccount.balance +" and your interest rate is " + savingsAccount.interestRatePercent + "%."}
+// };
+// console.log(savingsAccount.printAccountSummary());
+
+
+
+// Facebook Friends
+
+const facebookProfile = {
+  name: "Mearg",
+  friends:1000,
+  messages:['Frontend web development basics','React.js','node.js','angular'],
+  postMessage: function(message){
+    facebookProfile.messages.push(message);
+  },
+  deleteMessage: function(index){
+    facebookProfile.messages.splice(index, 1);
+  },
+  addFriend: function(){
+    facebookProfile.friends = facebookProfile.friends + 1;
+  },
+  removeFriend: function(){
+    if(facebookProfile.friecds>0)
+      facebookProfile.friends = facebookProfile.friends - 1;
+  }
 };
-console.log(savingsAccount.printAccountSummary());
+
+
+/* text code 
+console.log("Name: ", facebookProfile.name);
+console.log("Messages: ", facebookProfile.messages);
+facebookProfile.postMessage("New message!");
+console.log("Messages: ",  facebookProfile.messages);
+facebookProfile.deleteMessage(2);
+console.log("Messages: ",  facebookProfile.messages);
+console.log("Friends: ", facebookProfile.friends);
+facebookProfile.addFriend();
+console.log("Friends: ", facebookProfile.friends);
+facebookProfile.removeFriend();
+console.log("Friends: ", facebookProfile.friends); */
+
+// console.log("Name:", facebookProfile.name);
+// console.log(facebookProfile);
+// console.log("Messages", facebookProfile.messages);
+// facebookProfile.postMessage("git and github");
+console.log("Messages: ",  facebookProfile.messages);
+facebookProfile.deleteMessage(0);
