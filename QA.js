@@ -357,15 +357,27 @@
 
 
 
+// const sister = {
+//   name: "Sarah", 
+//   age: 23,
+//   parents: [ "Alice", "Andy" ],
+//   siblings: ["julia"],
+//   favoriteColor: "purple",
+//   pets: true
+// };
+// // two equivalent ways to use the key to return its value
+// sister["parents"] // returns ["Alice", "Andy" ]
+// sister.parents // also returns ["Alice", "Andy"]
+// console.log (sister.parents);
+
 const sister = {
-  name: "Sarah", 
+  name: "Sarah",
   age: 23,
-  parents: [ "Alice", "Andy" ],
-  siblings: ["julia"],
+  parents: ["Alice", "Andy"],
+  siblings: ["Julia"],
   favoriteColor: "purple",
-  pets: true
+  pets: true,
+  paintPicture: function() { return "Sarah paints!"; }
 };
-// two equivalent ways to use the key to return its value
-sister["parents"] // returns ["Alice", "Andy" ]
-sister.parents // also returns ["Alice", "Andy"]
-console.log (sister["parents"]);
+
+console.log(sister.paintPicture());
