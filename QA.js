@@ -368,3 +368,4 @@ const sister = {
 // two equivalent ways to use the key to return its value
 sister["parents"] // returns ["Alice", "Andy" ]
 sister.parents // also returns ["Alice", "Andy"]
+console.log (sister["parents"]);
