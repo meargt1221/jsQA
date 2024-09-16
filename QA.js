@@ -370,14 +370,22 @@
 // sister.parents // also returns ["Alice", "Andy"]
 // console.log (sister.parents);
 
-const sister = {
-  name: "Sarah",
-  age: 23,
-  parents: ["Alice", "Andy"],
-  siblings: ["Julia"],
-  favoriteColor: "purple",
-  pets: true,
-  paintPicture: function() { return "Sarah paints!"; }
-};
+// const sister = {
+//   name: "Sarah",
+//   age: 23,
+//   parents: ["Alice", "Andy"],
+//   siblings: ["Julia"],
+//   favoriteColor: "purple",
+//   pets: true,
+//   paintPicture: function() { return "Sarah paints!"; }
+// };
 
-console.log(sister.paintPicture());
+// console.log(sister.name);
+
+// Object literal
+var breakfast = {
+  name: "Lumberjack",
+  price: "$ 9.95",
+  ingredients: ['eggs', 'sausage','toast', 'hashbrowns', 'pancakes']
+}
+console.log(breakfast["name"]);
